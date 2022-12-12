@@ -78,19 +78,24 @@
     text-align: left;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #dddddd;
   }
 
   th {
-    background-color: blue;
+    background-color: #5C4033;
+    color: white;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
   }
 
   tr:nth-child(even) {
-    background-color: lightskyblue;
   }
 
   table {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 </style>
 
