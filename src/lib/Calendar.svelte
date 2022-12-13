@@ -50,34 +50,43 @@
 
 </script>
 
+<div id="table">
+  <h2> {months[wednesdays[0].getMonth()]} </h2>
 
-<h2> {months[wednesdays[0].getMonth()]} </h2>
-
-<table>
-  <tr>
-    <th>Date</th>
-    <th>Name</th>
-    <th>Address</th>
-  </tr>
-  {#each wednesdays as wednesday, count}
-  <tr>
-    <td> {wednesday.getMonth()+1}/{wednesday.getDate()}/{wednesday.getFullYear()} </td>
-    {#if count < bars.length}
-      <td> {bars[count].name} </td>
-      <td> {bars[count].address} </td>
-    {:else}
-      <td></td>
-      <td></td>
-    {/if}
-  </tr>
-  {/each}
-</table>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Name</th>
+      <th>Address</th>
+    </tr>
+    {#each wednesdays as wednesday, count}
+      <tr>
+        <td> {wednesday.getMonth()+1}/{wednesday.getDate()}/{wednesday.getFullYear()} </td>
+        {#if count < bars.length}
+          <td> {bars[count].name} </td>
+          <td> {bars[count].address} </td>
+        {:else}
+          <td></td>
+          <td></td>
+        {/if}
+      </tr>
+    {/each}
+  </table>
+</div>
 
 <style>
+  #table {
+    background-color: white;
+    padding: 20px 10px;
+    border: 10px solid #5C4033;
+    display: inline-block;
+  }
+
   td, th {
     text-align: left;
     margin: 10px;
     padding: 10px;
+    background-color: #F5DEB3;
   }
 
   th {
@@ -90,8 +99,6 @@
     border-collapse: collapse;
   }
 
-  tr:nth-child(even) {
-  }
 
   table {
     margin-left: auto;
