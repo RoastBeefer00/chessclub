@@ -30,7 +30,7 @@
 
   function getWednesdays() {
     var d = new Date(),
-      month = d.getMonth(),
+      month = 0,
       wednesdays = [];
 
     d.setDate(1);
