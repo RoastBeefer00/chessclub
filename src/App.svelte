@@ -68,9 +68,11 @@
   </div>
   <div class="content">
     {#if menu === 1 }
+    <div class="calendars">
       <Calendar month={current_date.getMonth()}/>
       <Calendar month={current_date.getMonth()+1}/>
       <Calendar month={current_date.getMonth()+2}/>
+    </div>
     {:else if menu === 2}
       <About />
     {:else if menu === 3}
@@ -97,6 +99,12 @@
   .content {
     position: relative;
     padding: 5px;
+  }
+
+  .calendars {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row: auto auto auto
   }
 
   #mountains {

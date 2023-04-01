@@ -5,11 +5,11 @@
 <div class="frame">
     <h3>{person.Name}</h3>
     <div class="selfie">
-        <img src="{person.Picture}" alt="Put Person Here">
+        <img class="image" src="{person.Picture}" alt="Put Person Here">
     </div>
     <div class="strengths">
+        <h4>Strengths</h4>
         <ul>
-            <h4>Strengths</h4>
             {#each person.Strengths as strength}
                 <li>{strength}</li>
             {/each}
@@ -22,25 +22,33 @@
 
 
 <style>
-    img {
-        max-width: 100%;
-        max-height: 100%;
+    .image {
+        width: 100%;
+        height: auto;
+        /* display: block; */
         /* object-fit: contain; */
     }
 
     .frame {
-        margin: 30px;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* margin-top: 30px; */
+        /* margin-bottom: 30px; */
+        margin: 10px;
         padding: 30px;
         border: 1px solid black;
         border-radius: 4px;
-        width: 500px;
-        height: 300px;
-        display: inline-block
+        /* width: 50%; */
+        height: 500px;
+        background-color: beige;
+        /* float: left; */
+        
     }
 
     .selfie {
         float: left;
         width: 45%;
+        /* max-height: 60%; */
         padding: 5px;
         margin: 5px;
     }
@@ -50,10 +58,13 @@
         width: 45%;
         padding: 5px;
         margin: 5px;
+        text-align: left;
+
     }
 
     ul {
-        float: right;
+        /* float: right; */
+        text-align: left;
     }
 
     li {
@@ -61,6 +72,11 @@
     }
 
     p {
-        text-align: center;
+        text-align: left;
+    }
+
+    h3 {
+        background-color: #5C4033;
+        color: beige
     }
 </style>

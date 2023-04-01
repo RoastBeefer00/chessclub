@@ -6,6 +6,17 @@
 </script>
 
 <h2>Coaches</h2>
-{#each Coaches.Coaches as Coach}
-    <Bio person={Coach}/>
-{/each}
+<div class="container">
+    {#each Coaches.Coaches as Coach}
+        <Bio person={Coach}/> 
+    {/each}
+</div>
+
+<style>
+    .container {
+        display: grid;
+        grid-row: auto auto;
+        grid-template-columns: auto auto;
+        /* ?flex-wrap: flex; */
+    }
+</style>
