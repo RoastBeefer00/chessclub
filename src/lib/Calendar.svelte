@@ -1,5 +1,7 @@
 <script>
-  let wednesdays = getWednesdays();
+  export let month;
+
+  let wednesdays = getWednesdays(month);
 
   let months = [
     "January",
@@ -28,12 +30,15 @@
   ]
 
 
-  function getWednesdays() {
-    var d = new Date(),
-      month = 0,
+  function getWednesdays(month_index) {
+    var current_date = new Date();
+    var year = current_date.getFullYear();
+    var d = new Date(year, month_index),
+      month = d.getMonth(),
       wednesdays = [];
 
     d.setDate(1);
+    console.log(month);
 
     // Get the first Wednesday in the Month
     while (d.getDay() != 3) {

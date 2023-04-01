@@ -7,6 +7,8 @@
   function setMenu(id) {
     menu = id;
   }
+
+  let current_date = new Date();
 </script>
 
 <main>
@@ -43,7 +45,9 @@
   </div>
   <div class="content">
     {#if menu === 1 }
-      <Calendar />
+      <Calendar month={current_date.getMonth()}/>
+      <Calendar month={current_date.getMonth()+1}/>
+      <Calendar month={current_date.getMonth()+2}/>
     {:else if menu === 2}
       <About />
     {/if}
