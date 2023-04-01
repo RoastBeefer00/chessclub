@@ -1,0 +1,26 @@
+{
+    "Coaches": [
+        {
+            "Name": "Travis Dent",
+            "Strengths": [
+                "Openings",
+                "Building a reportoire",
+                "Handsome"
+            ],
+            "Phone": "(666) 666-6969",
+            "Email": "person@email.com",
+            "Picture": "travis_dent.jpg"
+        },
+        {
+            "Name": "Will",
+            "Strengths": [
+                "Talking shit",
+                "Experienced coach",
+                "Nice guy"
+            ],
+            "Phone": "(666) 666-6969",
+            "Email": "person@email.com",
+            "Picture": "will.jpg"
+        }
+    ]
+}

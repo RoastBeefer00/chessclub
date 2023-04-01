@@ -1,6 +1,7 @@
 <script>
-  import About from "./lib/About.svelte"
-  import Calendar from "./lib/Calendar.svelte"
+  import About from "./lib/About.svelte";
+  import Calendar from "./lib/Calendar.svelte";
+  import Coaches from "./lib/Coaches.svelte";
 
   export let menu = 1;
 
@@ -40,6 +41,28 @@
             {/if}
           </a>
         </li>
+        <li>
+          <a href="/" on:click|preventDefault={() => setMenu(3)}>
+            {#if menu == 3}
+              &#x2654;
+            {/if}
+            Coaches
+            {#if menu == 3}
+              &#x2654;
+            {/if}
+          </a>
+        </li>
+        <li class="donate">
+          <a href="/" on:click|preventDefault={() => setMenu(4)}>
+            {#if menu == 4}
+              &#x2654;
+            {/if}
+            Donate
+            {#if menu == 4}
+              &#x2654;
+            {/if}
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -50,6 +73,8 @@
       <Calendar month={current_date.getMonth()+2}/>
     {:else if menu === 2}
       <About />
+    {:else if menu === 3}
+      <Coaches />
     {/if}
   </div>
 
@@ -71,6 +96,7 @@
 
   .content {
     position: relative;
+    padding: 5px;
   }
 
   #mountains {
@@ -118,6 +144,11 @@
   body {
     padding-top: 60px;
     padding-bottom: 40px;
+  }
+
+  .donate {
+    float: right;
+    border-left: 1px solid black;
   }
 
 </style>
