@@ -39,7 +39,7 @@
         border: 1px solid black;
         border-radius: 4px;
         /* width: 50%; */
-        height: 500px;
+        height: 450px;
         background-color: beige;
         /* float: left; */
         

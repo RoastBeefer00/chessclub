@@ -107,6 +107,14 @@
     grid-row: auto auto auto
   }
 
+  @media (max-width: 1200px) {
+        .calendars {
+            display: grid;
+            grid-row: auto;
+            grid-template-columns: auto;
+        }
+    }
+
   #mountains {
     width: 100%;
     height: 250px;
@@ -147,6 +155,7 @@
 
   h1 {
     color: white;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   body {

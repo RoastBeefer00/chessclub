@@ -19,4 +19,12 @@
         grid-template-columns: auto auto;
         /* ?flex-wrap: flex; */
     }
+
+    @media (max-width: 1200px) {
+        .container {
+            display: grid;
+            grid-row: auto;
+            grid-template-columns: auto;
+        }
+    }
 </style>
