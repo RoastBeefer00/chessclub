@@ -1,15 +1,14 @@
 <script>
   import About from "./lib/About.svelte";
-  import Calendar from "./lib/Calendar.svelte";
   import Coaches from "./lib/Coaches.svelte";
-
+  import Schedule from "./lib/Schedule.svelte";
+  import Home from "./lib/Home.svelte"
   export let menu = 1;
 
   function setMenu(id) {
     menu = id;
   }
 
-  let current_date = new Date();
 </script>
 
 <main>
@@ -46,19 +45,30 @@
             {#if menu == 3}
               &#x2654;
             {/if}
-            Coaches
+            Private Lessons
             {#if menu == 3}
               &#x2654;
             {/if}
           </a>
         </li>
-        <li class="donate">
+        <li>
           <a href="/" on:click|preventDefault={() => setMenu(4)}>
             {#if menu == 4}
               &#x2654;
             {/if}
-            Donate
+            Schedule
             {#if menu == 4}
+              &#x2654;
+            {/if}
+          </a>
+        </li>
+        <li class="donate">
+          <a href="/" on:click|preventDefault={() => setMenu(5)}>
+            {#if menu == 5}
+              &#x2654;
+            {/if}
+            Donate
+            {#if menu == 5}
               &#x2654;
             {/if}
           </a>
@@ -68,15 +78,13 @@
   </div>
   <div class="content">
     {#if menu === 1 }
-    <div class="calendars">
-      <Calendar month={current_date.getMonth()}/>
-      <Calendar month={current_date.getMonth()+1}/>
-      <Calendar month={current_date.getMonth()+2}/>
-    </div>
+      <Home />
     {:else if menu === 2}
       <About />
     {:else if menu === 3}
       <Coaches />
+    {:else if menu === 4}
+      <Schedule />
     {/if}
   </div>
 
@@ -101,20 +109,6 @@
     padding: 5px;
   }
 
-  .calendars {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-row: auto auto auto
-  }
-
-  @media (max-width: 1200px) {
-        .calendars {
-            display: grid;
-            grid-row: auto;
-            grid-template-columns: auto;
-        }
-    }
-
   #mountains {
     width: 100%;
     height: 250px;
@@ -131,18 +125,19 @@
     width: 100%;
     overflow: hidden;
     display: inline;
-    background-color: #5C4033;
+    /* background-color: #5C4033; */
+    background-color: black;
   }
 
   li {
     display: block;
     float: left;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     padding: 10px;
   }
 
   ul {
-    border: 1px solid black;
+    border: 1px solid white;
   }
 
   a {
@@ -155,7 +150,6 @@
 
   h1 {
     color: white;
-    font-family: 'Times New Roman', Times, serif;
   }
 
   body {
@@ -165,7 +159,7 @@
 
   .donate {
     float: right;
-    border-left: 1px solid black;
+    border-left: 1px solid white;
   }
 
 </style>

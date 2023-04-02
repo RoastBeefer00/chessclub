@@ -40,7 +40,8 @@
         border-radius: 4px;
         /* width: 50%; */
         height: 450px;
-        background-color: beige;
+        background-color: lightgray;
+        box-shadow: 20px 20px 50px grey;
         /* float: left; */
         
     }
@@ -59,7 +60,7 @@
         padding: 5px;
         margin: 5px;
         text-align: left;
-
+        color: black;
     }
 
     ul {
@@ -76,7 +77,7 @@
     }
 
     h3 {
-        background-color: #5C4033;
-        color: beige
+        background-color: black;
+        color: white
     }
 </style>

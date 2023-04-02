@@ -81,9 +81,9 @@
 
 <style>
   #table {
-    background-color: beige;
+    /* background-color: beige; */
     padding: 20px 10px;
-    border: 10px solid #5C4033;
+    /* border: 10px solid #5C4033; */
     display: inline-block;
     margin: 10px;
   }
@@ -92,11 +92,12 @@
     text-align: left;
     margin: 10px;
     padding: 10px;
-    background-color: #F5DEB3;
+    /* background-color: #F5DEB3; */
+    background-color: white;
   }
 
   th {
-    background-color: #5C4033;
+    background-color: black;
     color: white;
   }
 
@@ -105,10 +106,15 @@
     border-collapse: collapse;
   }
 
+  tr:nth-child(odd) {
+    background-color: lightgrey;
+  }
+
 
   table {
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 20px 20px 50px grey;
   }
 </style>
 
