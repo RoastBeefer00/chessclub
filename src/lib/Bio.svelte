@@ -78,6 +78,7 @@
 
     h3 {
         background-color: black;
-        color: white
+        color: white;
+        padding: 5px;
     }
 </style>

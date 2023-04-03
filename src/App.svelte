@@ -13,8 +13,8 @@
 
 <main>
   <div id="title">
-    <img src="Organ_Mountains.png" alt="Organ Mountains" id="mountains">
-    <h1 class="bottom-center">Las Cruces Chess Club</h1>
+    <!-- <img src="Organ_Mountains.png" alt="Organ Mountains" id="mountains"> -->
+    <h1> Las Cruces Chess Club </h1>
 
     <div class="nav">
       <ul id="menu">
@@ -93,8 +93,16 @@
 <style>
   #title {
     width: 100%;
+    /* height: 500px; */
     position: relative;
     text-align: center;
+    display: block;
+    background: black;
+  }
+
+  h1 {
+    font-size: 50pt;
+    padding: 20px;
   }
 
   .bottom-center {
@@ -150,6 +158,7 @@
 
   h1 {
     color: white;
+    /* height: 400px; */
   }
 
   body {

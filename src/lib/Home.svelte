@@ -1,15 +1,29 @@
 <script>
     import Calendar from "./Calendar.svelte";
+    import Header from "./Header.svelte";
+
     let current_date = new Date();
 </script>
 
 <div>
-    <h1>Welcome to Cruces Chess Club!</h1>
-   <Calendar month={current_date.getMonth()} />
+    <Header>
+        <h1><u>Welcome to Cruces Chess Club!</u></h1>
+    </Header>
+    <div class="calendar">
+        <Calendar month={current_date.getMonth()} />
+    </div>
 </div>
 
 <style>
-    div {
-        background-color: inherit;
+    .calendar {
+        background-color: white;
+        box-shadow: 20px 20px 50px grey;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        max-width: 50%;
+        display: inline-block;
     }
 </style>
