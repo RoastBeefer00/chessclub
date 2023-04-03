@@ -14,7 +14,7 @@
 <main>
   <div id="title">
     <!-- <img src="Organ_Mountains.png" alt="Organ Mountains" id="mountains"> -->
-    <h1> Las Cruces Chess Club </h1>
+    <h1>&#x2656; Las Cruces Chess Club &#x2656;</h1>
 
     <div class="nav">
       <ul id="menu">
