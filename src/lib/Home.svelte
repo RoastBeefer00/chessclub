@@ -18,8 +18,8 @@
     .calendar {
         background-color: white;
         box-shadow: 20px 20px 50px grey;
-        margin: 2px;
-        padding: 20px;
+        /* margin: 2px; */
+        /* padding: 5px; */
         /* max-width: 50%; */
         display: inline-block;
     }

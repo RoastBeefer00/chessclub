@@ -82,10 +82,10 @@
 <style>
   #table {
     /* background-color: beige; */
-    padding: 20px 10px;
+    padding: 10px;
     /* border: 10px solid #5C4033; */
     display: inline-block;
-    margin: 10px;
+    margin: 2px;
   }
 
   td, th {
