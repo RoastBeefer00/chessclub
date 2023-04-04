@@ -101,7 +101,7 @@
   }
 
   h1 {
-    font-size: 50pt;
+    /* font-size: 50pt; */
     padding: 20px;
   }
 

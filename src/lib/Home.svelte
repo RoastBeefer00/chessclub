@@ -18,12 +18,9 @@
     .calendar {
         background-color: white;
         box-shadow: 20px 20px 50px grey;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 2px;
         padding: 20px;
-        max-width: 50%;
+        /* max-width: 50%; */
         display: inline-block;
     }
 </style>
